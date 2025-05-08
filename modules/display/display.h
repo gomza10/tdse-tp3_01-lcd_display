@@ -1,4 +1,7 @@
 //=====[#include guards - begin]===============================================
+#include <stdint.h>
+
+//=====[#include guards - begin]===============================================
 
 #ifndef _DISPLAY_H_
 #define _DISPLAY_H_
