@@ -1,0 +1,17 @@
+display.cpp 
+- se definen macro para asignarle la numeración correspondiente a los pines que se usaran como salida del display
+- se definen las definen los pines de salida mediante la cancion DigitalOut
+- se declara las siguientes funciones: 
+	-static void displayPinWrite( uint8_t pinName, int value ), Escribe un valor entero en un pin de control de la pantalla 
+
+	- static void displayDataBusWrite( uint8_t dataByte ), Escribe un byte completo en el bus de datos de la pantalla LCD.
+
+	-static void displayCodeWrite( bool type, uint8_t dataBus ), Escribe un comando o dato a la pantalla, dependiendo del valor de type.
+
+- La función 'displayInit' inicializa la configuración de display. 
+- La función 'displayCharPositionWrite' setea la posición que se utiliza para mostrar los datos.
+- La función 'displayStringWrite' define qué se escribe en dichas posiciones.
+
+display.h
+-se declara el tipo de dato 'displayConnection_t' mediante un estructura que clasifica en dos cantidades de bits. 
+-'display_t' es un tipo de dato que posee un único campo del tipo 'displayConnection_t'.
